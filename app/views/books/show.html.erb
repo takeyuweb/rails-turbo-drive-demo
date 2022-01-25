@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @book %>
+
+<div>
+  <%= link_to "Edit this book", edit_book_path(@book), data: { turbo: false } %> |
+  <%= link_to "Back to books", books_path, data: { turbo: false } %>
+
+  <%= button_to "Destroy this book", @book, method: :delete, data: { turbo: false } %>
+</div>

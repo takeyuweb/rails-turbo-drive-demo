@@ -1,0 +1,10 @@
+<h1>Editing book</h1>
+
+<%= render "form", book: @book %>
+
+<br>
+
+<div>
+  <%= link_to "Show this book", @book, data: { turbo: false } %> |
+  <%= link_to "Back to books", books_path, data: { turbo: false } %>
+</div>
